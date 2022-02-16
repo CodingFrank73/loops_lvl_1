@@ -43,9 +43,8 @@ for (i = 0; i < apples.length; i++) {
 let retArray = [];
 let j = 1;
 
-while (j <= 100) {
+for (let j = 1; j <= 100; j++) {
     retArray.push("image_" + j)
-    j++;
 }
 console.log(retArray);
 
@@ -76,7 +75,6 @@ function get() {
             console.log(e);
             document.getElementById('result').innerHTML += `<h1>${e}</h1><br>`;
         }
-
     });
 
 };
