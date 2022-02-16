@@ -10,12 +10,20 @@
 </head>
 
 <body>
-    <form action="" onsubmit="return false">
-        <label for="value"></label>
-        <input type="number" name="value" id="value">
-        <button onclick="get()">word print</button>
-        <div id="result"></div>
-    </form>
+    <section>
+        <form action="" onsubmit="return false">
+            <label for="value"></label>
+            <input type="number" name="value" id="value">
+            <button onclick="get()">word print</button>
+            <div id="result"></div>
+        </form>
+
+        <form action="" onsubmit="return false"></form>
+        <label for="newItems"></label>
+        <input type="text" name="" id="newItems">
+        <button onclick="add(document.getElementById('newItems').value)">Neuen Begriff hinzufügen</button>
+    </section>
+
     <script src="assets/js/main.js"></script>
 </body>
 

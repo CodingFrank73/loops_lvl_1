@@ -71,15 +71,18 @@ let words = ['hallo', 'Auto', 'Waschmaschine', 'Schrank', 'Katze', 'Beispiel', '
 let a = document.getElementById("value");
 
 function get() {
-
     words.forEach(e => {
-
-        console.log(e);
         if (e.length == a.value) {
             console.log(e);
-            document.write(`<h1>${e}</h1><br>`);
+            document.getElementById('result').innerHTML += `<h1>${e}</h1><br>`;
         }
+
     });
 
 };
+
+function add(value) {
+    words.push(value);
+    console.log(words);
+}
 
